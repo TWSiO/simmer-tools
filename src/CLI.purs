@@ -10,7 +10,7 @@ import Options.Applicative ((<**>))
 import Options.Applicative as O
 
 -- import Repl (runRepl)
-import Interpret (Value, eval', Library)
+import Simmer.Interpret (Value, eval', Library)
 
 cli :: Array Library -> Effect Unit
 cli lib = O.execParser opts >>= (handleCmd lib)
