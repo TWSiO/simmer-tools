@@ -9,7 +9,6 @@ import Data.Either (Either(..))
 import Options.Applicative ((<**>))
 import Options.Applicative as O
 
--- import Repl (runRepl)
 import Simmer.Interpret (Value, eval', Library)
 
 cli :: Array Library -> Effect Unit
